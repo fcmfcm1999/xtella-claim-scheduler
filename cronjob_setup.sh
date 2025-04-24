@@ -51,7 +51,7 @@ while IFS= read -r job; do
     # 计算本地时区的执行时间
     HOUR=$(( (HOUR - TIME_DIFF + 24) % 24 ))
 
-    NEW_CRON+="$MINUTE $HOUR * * * $NODE_BIN $INDEX_JS $INDEX >> $LOG_FILE 2>&1\n"
+    NEW_CRON+="$MINUTE $HOUR * * * nohup $NODE_BIN $INDEX_JS $INDEX >> $LOG_FILE 2>&1 &\n"
     ((INDEX++))
 done <<< "$JOBS"
 
