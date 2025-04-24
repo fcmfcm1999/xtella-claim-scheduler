@@ -1,0 +1,26 @@
+{
+  "type": "commonjs",
+  "name": "web3-js-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/test-connection.js"
+  },
+  "private": true,
+  "dependencies": {
+    "axios": "1.7.4",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
+    "socks-proxy-agent": "^8.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/@mgonetwork/mango.js/keypairs/ed25519.js"
+    ]
+  }
+}

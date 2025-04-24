@@ -1,0 +1,12 @@
+[
+  {
+    "address": "以太坊地址",
+    "privateKey": "以太坊私钥",
+    "proxy": "支持socks5代理(可以不填)。格式: socks://username:password@ip:port"
+  },
+  {
+    "address": "",
+    "privateKey": "",
+    "proxy": ""
+  }
+]
