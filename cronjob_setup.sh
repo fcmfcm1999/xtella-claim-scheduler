@@ -40,6 +40,12 @@ while IFS= read -r job; do
     MINUTE=$(echo "$RUNTIME" | cut -d":" -f2)
     HOUR=$(echo "$RUNTIME" | cut -d":" -f1)
 
+    if [ "$RUNTIME" == "null" ] || [ -z "$RUNTIME" ]; then
+        echo "Skipping entry $INDEX: missing runTime"
+        ((INDEX++))
+        continue
+    fi
+
     # 移除前导零
     HOUR=$(echo "$HOUR" | sed 's/^0*//')
     # 计算本地时区的执行时间
