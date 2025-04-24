@@ -2,7 +2,8 @@
   {
     "address": "以太坊地址",
     "privateKey": "以太坊私钥",
-    "proxy": "支持socks5代理(可以不填)。格式: socks://username:password@ip:port"
+    "proxy": "支持socks5代理(可以不填)。格式: socks://username:password@ip:port",
+    "runTime": "北京时间几点几分运行。例如: 08:02 表示早上八点零二分运行"
   },
   {
     "address": "",
